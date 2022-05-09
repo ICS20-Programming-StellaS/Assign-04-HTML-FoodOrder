@@ -11,45 +11,85 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favs/favicon-16x16.png">
     <link rel="manifest" href="./favs/site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Museum Admission in JS</title>
+    <title>Food order in JS</title>
   </head>
   <body>
     <script src="./js/script.js"></script>
 	  <center>
-    <h1>Smoothie Shack</h1>
-		<table>
-			<tr align = "center">
-				<td valign="top" align="right">
-					<h3>Order Here:</h3>
-					<form action="javascript:displayCost()">											
-						<label for="size">*Size:</label>
-						<select name="size" id="size">
-						    <option value="">--Size of Smoothie--</option>
-						    <option value="snack">Small - $5.27</option>
-							<option value="large">Regular - $7.69</option>
-						</select>
-						<br><br>
-						<label for="flavours">*Flavours:</label>
-						<select name="flavour" id="flavor">
-						    <option value="">--Flavour for Smoothie--</option>
-						    <option value="snack">Banana N' Strawberry - </option>
-						    <option value="medium">Berry Blend</option>
-						    <option value="medium">Tropical Twist</option>
-							<option value="large">Green Mix</option>
-						</select>
-						<br><br>
-						<input type="submit" value="Display Admission Cost">
-					</form>
-				</td>
-				<td valign="top" align="center">
-					<img src="./image/museum.jpg" alt="Museum" width="50%">
-				</td>
-			</tr>
-		</table>
-		<!-- User result information will be displayed -->
-		<div id="display-results">
-			
-		</div>
-		  </center>
+      <h1>SMOOTHIE SHACK</h1>
+  		<img src="./images/smoothie_a.jpg" alt="Smoothie" width="38%">
+  		<img src="./images/smoothie.jpg" alt="Smoothie" width="30%">
+  		<img src="./images/smoothies.jpg" alt="Smoothie" width="30%">
+  		<table>
+  			<tr align = "center">
+  				<td valign="top" align="right">
+      </table>
+          
+          <table>
+            <tr>
+              <th>Flavour</th>
+              <th>Size</th>
+              <th>Extras</th>
+            </tr>
+            <tr>
+              <td>Strawberry N' Bananna</td>
+              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
+            </tr>
+            <tr>
+              <td>Berry Blend</td>
+              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
+            </tr>
+            <tr>
+              <td>Tropical Twist</td>
+              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
+            </tr>
+            <tr>
+              <td>Green Mix</td>
+              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
+            </tr>
+          </table>
+            
+  					<h3>Order Here:</h3>
+  					<form action="javascript:displayCost()">											
+  						<label for="size">*Please Select Drink Size:</label>
+  						<select name="size" id="size">
+  						    <option value="">--Size of Smoothie--</option>
+  						    <option value="snack">Snack - $3.78</option>
+  						    <option value="snack">Medium - $5.27</option>
+  							<option value="large">Regular - $7.69</option>
+  						</select>
+  						<br><br>
+  						<label for="flavours">*Please Select Drink Flavour:</label>
+  						<select name="flavour" id="flavor">
+  						    <option value="">--Flavour for Smoothie--</option>
+  						    <option value="flavour_a">Banana N' Strawberry </option>
+  						    <option value="flavour_b">Berry Blend</option>
+  						    <option value="flavour_c">Tropical Twist</option>
+  							<option value="flavour_d">Green Mix</option>
+  						</select>
+  						<br><br>
+  						<label for="extras">*Extra add-ons/add-ins:</label>
+  						<select name="extra" id="extra">
+  						    <option value="">--Drink Extras--</option>
+  						    <option value="extra_a">Protein Powder +$4.00 </option>
+  						    <option value="extra_b">Fruit Toppings +$5.00</option>
+  						  <option value="extra_c">Plastic Straw +$3.00</option>
+  						</select>
+  						<br><br>
+  						<input type="submit" value="Order">
+  					</form>
+  				</td>
+  				<td valign="top" align="center">
+  				</td>
+  			</tr>
+  		<!-- User result information will be displayed -->
+  		<div id="display-results">
+  			
+  		</div>
+		</center>
   </body>
 </html>

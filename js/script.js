@@ -10,8 +10,13 @@
  * This function displays the discount depending on age and day of the week.
  */
 function displayCost() {
-  	// initialize variables
-	let cost = 0
+// declare constants
+  const SNACK_PRICE = 3.78
+  const MEDIUM_PRICE = 5.27
+  const LARGE_PRICE = 7.69
+  
+  let giftSelected = false
+  let sizePrice = 0
 	
 	// get age and day of the week
 	let select = document.getElementById('size');
