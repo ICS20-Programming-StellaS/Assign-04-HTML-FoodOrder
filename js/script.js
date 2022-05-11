@@ -11,31 +11,69 @@
  */
 function displayCost() {
 // declare constants
-  const SNACK_PRICE = 3.78
-  const MEDIUM_PRICE = 5.27
-  const LARGE_PRICE = 7.69
+  const SNACK_PRICE = 3.78;
+  const MED_PRICE = 5.27;
+  const LAR_PRICE = 7.69;
+  const PROT_PRICE = 4.00;
+  const TOP_PRICE = 5.00;
+  const PLAST_PRICE = 3.00;
+  const SWE_PRICE = 4.00;
+  const HST = 0.13;
   
-  let giftSelected = false
+// initialize variables
   let sizePrice = 0
+  let extraPrice = 0
 	
-	// get age and day of the week
-	let select = document.getElementById('size');
-	let size = select.options[select.selectedIndex].value;	
-	let select_a = document.getElementById('flavour');
-	let flavours = select.options[select_a.selectedIndex].value;
+	// get age and day of the week	
+	let sizeSelection = document.getElementById('size').value;
+  let size = sizeSelection.options[sizeSelection.selectedIndex].value;
+  
+  let flavourSelection = document.getElementById('flavour').value;
+  let flavour = flavourSelection.options[flavourSelection.selectedIndex].value;
+  
+  let extraSelection = document.getElementById('extra_a').value;
+  let extra = extraSelection.options[extraSelection.selectedIndex].value;
 
-  	
-	if (age < 5 || age > 95) {
-		cost = "The cost for you is FREE! Have Fun!"
+  let extraSelection = document.getElementById('extra_b').value;
+  let extra = extraSelection.options[extraSelection.selectedIndex].value;
+
+  let extraSelection = document.getElementById('extra_c').value;
+  let extra = extraSelection.options[extraSelection.selectedIndex].value;
+
+  let extraSelection = document.getElementById('extra_d').value;
+  let extra = extraSelection.options[extraSelection.selectedIndex].value;
+
+  
+  //find out price
+  if (size == "Snack")  {
+		sizePrice = Snack_PRICE 
 	}
-	else if ((day == "Tuesday") || ((day == "Thursday")) 
-			 || (age >=12) && (age <=21)) {
-		cost = "Lucky you! You get a student discount. Enjoy!"
+	else if (size == "Medium") {
+		sizePrice = MED_PRICE
 	}
-	else if ((age > 0) || (day != "")) {		
-		cost = "No discount for you. You have to pay regular price."
+	else if (size == "large") {
+		sizePrice = LAR_PRICE
 	}
-	
-  	// display the results
-  	document.getElementById('display-results').innerHTML = cost
+  
+  // extras
+   if (extra == "protein") {
+		extraPrice = PROT_PRICE
+	}
+	else if (extra == "fruit") {
+		extraPrice = TOP_PRICE
+	}
+	else if (extra == "straw") {
+		extraPrice = PLAST_PRICE
+	}
+  else if (extra == "sweetner") {
+		extraPrice = SWE_PRICE
+	}
+
+  // Totals
+	let subtotal = + extraPrice + sizePrice
+  let tax = subtotal * HST
+  let total = subtotal + tax
+    	
+  	// display the cost
+  document.getElementById("display-cost").innerHTML = "Your subtotal is $" + subtotal.toFixed(2) + ".<br>The amount of HST added is $" + tax.toFixed(2) + ".<br>Your total is $" + total.toFixed(2) + ".";
 }

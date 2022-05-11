@@ -1,95 +1,162 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Museum, with JavaScript">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Stella S">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favs/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favs/favicon-16x16.png">
-    <link rel="manifest" href="./favs/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Food order in JS</title>
+		<!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Food order with JavaScript" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Stella S"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Code for the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+
+    <!-- Code for the style sheets-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-teal.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Webpage title-->
+    <title>Smoothie Shack</title>
   </head>
-  <body>
+  <center><body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
-	  <center>
-      <h1>SMOOTHIE SHACK</h1>
-  		<img src="./images/smoothie_a.jpg" alt="Smoothie" width="38%">
-  		<img src="./images/smoothie.jpg" alt="Smoothie" width="30%">
-  		<img src="./images/smoothies.jpg" alt="Smoothie" width="30%">
-  		<table>
-  			<tr align = "center">
-  				<td valign="top" align="right">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">SMOOTHIE SHACK</span> 
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+      
+    <!-- images -->
+    		<img src="./images/smoothie_a.jpg" alt="Smoothie" width="38%">
+    		<img src="./images/smoothie.jpg" alt="Smoothie" width="30%">
+    		<img src="./images/smoothies.jpg" alt="Smoothie" width="30%">
+    		<table>
+    			<tr align = "center">
+    				<td valign="top" align="right">
+        </table>
+        <h4>Welcome to the SMOOTHIE SHACK</h4>
+        <p>Here at the SMOOTHIE SHACK we love making healthy, fresh and clean smoothies that taste great! Eveything is biodigratable and good for the earth :)</p>
+        
+    <!-- menu table -->
+      <table>
+        <tr>
+          <th>Flavour</th>
+          <th>Size</th>
+          <th>Extras</th>
+        </tr>
+        <tr>
+          <td>Strawberry N' Bananna Classic <br>(Strawberries and Bananas)<br></td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00<br>Sweetner (Honey,Agave, Stevia) +$4.00</br></td>
+        </tr>
+        <tr>
+          <td>Berry Blend <br>(Blueberries, rasberries, blackberries and strawberries)</br></td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00<br>Sweetner (Honey,Agave, Stevia) +$4.00</br></td>
+        </tr>
+        <tr>
+          <td>Tropical Twist <br>(Mangos, Bananas, Pineapples, Pears, Kiwis, Melon, Oranges, Peach and Grapefruit)</br></td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00<br>Sweetner (Honey,Agave, Stevia) +$4.00</br></td>
+        </tr>
+        <tr>
+          <td>Green Mix <br> (Spinach, Kale, Kiwis, Grapes, Pear, Apple, Pineapple and Honey dew)</td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
+          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00 <br>Sweetner (Honey,Agave, Stevia) +$4.00</br></td>
+        </tr>
       </table>
           
-          <table>
-            <tr>
-              <th>Flavour</th>
-              <th>Size</th>
-              <th>Extras</th>
-            </tr>
-            <tr>
-              <td>Strawberry N' Bananna</td>
-              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
-            </tr>
-            <tr>
-              <td>Berry Blend</td>
-              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
-            </tr>
-            <tr>
-              <td>Tropical Twist</td>
-              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
-            </tr>
-            <tr>
-              <td>Green Mix</td>
-              <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-              <td>Protein Powder +$4.00 <br>Top with Fruit of your Choice +$5.00<br>Plastic Straw +$3.00</br></td>
-            </tr>
-          </table>
-            
-  					<h3>Order Here:</h3>
-  					<form action="javascript:displayCost()">											
-  						<label for="size">*Please Select Drink Size:</label>
-  						<select name="size" id="size">
-  						    <option value="">--Size of Smoothie--</option>
-  						    <option value="snack">Snack - $3.78</option>
-  						    <option value="snack">Medium - $5.27</option>
-  							<option value="large">Regular - $7.69</option>
-  						</select>
-  						<br><br>
-  						<label for="flavours">*Please Select Drink Flavour:</label>
-  						<select name="flavour" id="flavor">
-  						    <option value="">--Flavour for Smoothie--</option>
-  						    <option value="flavour_a">Banana N' Strawberry </option>
-  						    <option value="flavour_b">Berry Blend</option>
-  						    <option value="flavour_c">Tropical Twist</option>
-  							<option value="flavour_d">Green Mix</option>
-  						</select>
-  						<br><br>
-  						<label for="extras">*Extra add-ons/add-ins:</label>
-  						<select name="extra" id="extra">
-  						    <option value="">--Drink Extras--</option>
-  						    <option value="extra_a">Protein Powder +$4.00 </option>
-  						    <option value="extra_b">Fruit Toppings +$5.00</option>
-  						  <option value="extra_c">Plastic Straw +$3.00</option>
-  						</select>
-  						<br><br>
-  						<input type="submit" value="Order">
-  					</form>
-  				</td>
-  				<td valign="top" align="center">
-  				</td>
-  			</tr>
-  		<!-- User result information will be displayed -->
-  		<div id="display-results">
-  			
-  		</div>
-		</center>
-  </body>
+    <!-- size dropdown options -->
+    	<h3>Order Here:</h3>
+    	<form>											
+    		<label for="size">*Please Select Drink Size:</label>
+    		<select name="size" id="size">
+    			<option value="">--Size of Smoothie--</option>
+    			  <option value="snack">Snack - $3.78</option>
+    			  <option value="medium">Medium - $5.27</option>
+    		  <option value="large">Regular - $7.69</option>
+       </select>
+      </form>
+    <br><br>
+                
+    <!-- Flavour dropdown options -->
+    	<label for="flavours">*Please Select Drink Flavour:</label>
+    	<select name="flavour" id="flavor">
+    		<option value="">--Flavour for Smoothie--</option>
+    			<option value="flavour_a">Banana N' Strawberry </option>
+    			<option value="flavour_b">Berry Blend</option>
+    			<option value="flavour_c">Tropical Twist</option>
+    		<option value="flavour_d">Green Mix</option>
+    	</select>
+    <br><br>
+      
+    <!-- extra dropdown options -->
+    	<label for="extra_a">*Please select any additional Add-Ons and Add-Ins:</label>
+    	<select name="flavour" id="flavor">
+    		<option value="">--Extras--</option>
+    		<option value="none">NONE</option>
+    			<option value="protein">Protein Powder +$4.00</option>
+    			<option value="fruit">Fruit Topping +$5.00</option>
+    			<option value="straw">Plastic Straw +$3.00</option>
+    		<option value="sweetner">Sweetner +$4.00</option>
+    	</select>
+    <br><br>
+
+    <!-- extra dropdown options -->
+    	<label for="extra_b">*Please select any additional Add-Ons and Add-Ins:</label>
+    	<select name="flavour" id="flavor">
+    		<option value="">--Extras--</option>
+    		<option value="none">NONE</option>
+    			<option value="protein">Protein Powder +$4.00</option>
+    			<option value="fruit">Fruit Topping +$5.00</option>
+    			<option value="straw">Plastic Straw +$3.00</option>
+    		<option value="sweetner">Sweetner +$4.00</option>
+    	</select>
+    <br><br>
+
+    <!-- extra dropdown options -->
+    	<label for="extra_c">*Please select any additional Add-Ons and Add-Ins:</label>
+    	<select name="flavour" id="flavor">
+    		<option value="">--Extras--</option>
+    		<option value="none">NONE</option>
+    			<option value="protein">Protein Powder +$4.00</option>
+    			<option value="fruit">Fruit Topping +$5.00</option>
+    			<option value="straw">Plastic Straw +$3.00</option>
+    		<option value="sweetner">Sweetner +$4.00</option>
+    	</select>
+    <br><br>
+
+    <!-- extra dropdown options -->
+    	<label for="extra_d">*Please select any additional Add-Ons and Add-Ins:</label>
+    	<select name="flavour" id="flavor">
+    		<option value="">--Extras--</option>
+    		<option value="none">NONE</option>
+    			<option value="protein">Protein Powder +$4.00</option>
+    			<option value="fruit">Fruit Topping +$5.00</option>
+    			<option value="straw">Plastic Straw +$3.00</option>
+    		<option value="sweetner">Sweetner +$4.00</option>
+    	</select>
+    <br><br>
+        
+    		  <td valign="top" align="center">
+    		</td>
+    	</tr>
+      
+    <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Order Cost
+      </button>
+      
+      <!-- User result information will be displayed -->
+  	    <div id="display-cost">
+      </main>
+    </div>
+  </center></body>
 </html>
