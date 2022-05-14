@@ -40,7 +40,8 @@
     			<tr align = "center">
     				<td valign="top" align="right">
         </table>
-        <h4>Welcome to the SMOOTHIE SHACK</h4>
+        <h4>Welcome to the SMOOTHIE SHACK<span class="mdl-badge" data-badge="♥"></span></h4>
+        
         <p>Here at the SMOOTHIE SHACK we love making healthy, fresh and clean smoothies that taste great!</p>
         
     <!-- menu table -->
@@ -49,71 +50,92 @@
           <th>Flavour</th>
           <th>Size</th>
           <th>Extras</th>
+          <th>Sides</th>
+        </tr>
+        <tr>
+          <td>Strawberry N' Banana <br> (Strawberry and Bananas)</td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Regular $7.69</br></td>
+          <td>Protein Powder (Whey) +$5.00 <br>Top with Fruit of your Choice +$4.00<br>Sweetener (Honey,Agave or Stevia) +$3.00</br></td>
+          <td>Scone (Blueberry or Raspberry) +$2.67 <br>Protein Bites +$2.98<br>Fruit Cup +$1.79<br>Cookie (Chocolate Chip, Oatmeal or Cranberry and Chocolate) +$2.56</br></td>
         </tr>
         <tr>
           <td>Green Mix <br> (Spinach, Kale, Kiwis, Grapes, Pear, Apple, Pineapple and Honey dew)</td>
-          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$4.00</br></td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Regular $7.69</br></td>
+          <td>Protein Powder (Whey) +$5.00 <br>Top with Fruit of your Choice +$4.00<br>Sweetener (Honey,Agave or Stevia) +$3.00</br></td>
+          <td>Scone (Blueberry or Raspberry) +$2.67 <br>Protein Bites +$2.98<br>Fruit Cup +$1.79<br>Cookie (Chocolate Chip, Oatmeal or Cranberry and Chocolate) +$2.56</br></td>
         </tr>
         <tr>
-          <td>Green Mix <br> (Spinach, Kale, Kiwis, Grapes, Pear, Apple, Pineapple and Honey dew)</td>
-          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$4.00</br></td>
+          <td>Berry Blend <br> (Strawberries, Blueberries, Raspberries & Blackberries)</td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Regular $7.69</br></td>
+          <td>Protein Powder (Whey) +$5.00 <br>Top with Fruit of your Choice +$4.00<br>Sweetener (Honey,Agave or Stevia) +$3.00</br></td>
+          <td>Scone (Blueberry or Raspberry) +$2.67 <br>Protein Bites +$2.98<br>Fruit Cup +$1.79<br>Cookie (Chocolate Chip, Oatmeal or Cranberry and Chocolate) +$2.56</br></td>
         </tr>
         <tr>
-          <td>Green Mix <br> (Spinach, Kale, Kiwis, Grapes, Pear, Apple, Pineapple and Honey dew)</td>
-          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$4.00</br></td>
-        </tr>
-        <tr>
-          <td>Green Mix <br> (Spinach, Kale, Kiwis, Grapes, Pear, Apple, Pineapple and Honey dew)</td>
-          <td>Snack $3.78 <br>Medium $5.27<br>Large $7.69</br></td>
-          <td>Protein Powder (Whey) +$4.00 <br>Top with Fruit of your Choice +$4.00</br></td>
+          <td>Tropical Twist <br> (Banana, Coconut, Watermelon, Mango, Orange & Pear)</td>
+          <td>Snack $3.78 <br>Medium $5.27<br>Regular $7.69</br></td>
+          <td>Protein Powder (Whey) +$5.00 <br>Top with Fruit of your Choice +$4.00<br>Sweetener (Honey,Agave or Stevia) +$3.00</br></td>
+          <td>Scone (Blueberry or Raspberry) +$2.67 <br>Protein Bites +$2.98<br>Fruit Cup +$1.79<br>Cookie (Chocolate Chip, Oatmeal or Cranberry and Chocolate) +$2.56</br></td>
         </tr>
       </table>
-          
+
+      <h3>Order Here</h3>
       <!-- Form for user input -->
-      <form action="javascript:orderSent()">
+      <form action="javascript: calcOrder()">
         
         <!-- Dropdown Menu for size -->
-        <label for="size">Choose a Smoothie Size:</label>
+        <label for="size">*Choose a Smoothie Size:</label>
         <select id="size" name="size">
           <option value="">--Smoothie Size--</option>
-          <option value="Snack">Snack</option>
-          <option value="Medium">Medium</option>
-          <option value="Large">Regular</option>
+          <option value="snack">Snack</option>
+          <option value="medium">Medium</option>
+          <option value="regular">Regular</option>
         </select>
         <br>
         <br>
         
         <!-- Dropdown Menu for flavour -->
-        <label for="flavour">Choose a Smoothie Flavour:</label>
+        <label for="flavour">*Choose a Smoothie Flavour:</label>
         <select id="flavour" name="flavour">
-          <option value="1">--Smoothie Flavour--</option>
-          <option value="Banana">Banana N' Strawberry</option>
-          <option value="Berry">Berry Blend</option>
-          <option value="Tropical">Tropical Twist</option>
-          <option value="Green">Green Mix</option>
+          <option value="">--Smoothie Flavour--</option>
+          <option value="banana">Banana N' Strawberry</option>
+          <option value="berry">Berry Blend</option>
+          <option value="tropical">Tropical Twist</option>
+          <option value="green">Green Mix</option>
         </select>
         <br>
         <br>
 
         <!-- Dropdown Menu for extras -->
-        <label for="flavour">Choose a Smoothie extra:</label>
+        <label for="extra">Choose a Smoothie extra:</label>
         <select id="extra" name="extra">
-          <option value=".">--Smoothie extra--</option>
-          <option value="protein">Protein Powder</option>
-          <option value="fruit">Top with Fruit</option>
+          <option value="">--Smoothie extra--</option>
+          <option value="protein">Protein Powder ($5.00)</option>
+          <option value="fruit">Top with Fruit ($4.00)</option>
+          <option value="sweetener">Sweetener ($3.00)</option>
         </select>
         <br>
         <br>
 
-
-
-      <input type="submit" value="Submit Your Order">
-      </form>
+        <!-- Dropdown Menu for side snack -->
+        <label for="side">A Side Snack:</label>
+        <select id="side" name="side">
+          <option value="">--Side Snack--</option>
+          <option value="scone">Scone ($2.67)</option>
+          <option value="bites">Protein bites ($2.98)</option>
+          <option value="cup">Fruit Cup ($1.79)</option>
+          <option value="cookie">Cookie ($2.56)</option>
+        </select>
+        <br>
+        <br>
+        
+        <!-- Colored icon button -->
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+          <i class="material-icons">mood</i>
+        </button>
       <br>
-    <div id="results"></div>
+      <div id="results"></div>
+			<div id="answer">
+      </div>
     </main>
   </body>
 </html>

@@ -1,13 +1,17 @@
 body {
-  background-color: Lavender;
+  background-color: FloralWhite;
 }
 
 h4 {
-  background-color: #f08fa2;
+  background-color: #fbe4e8;
   border: 1px solid #000000;
-  color: hsl(0, 0%, 5%);
+  color: hsl(319, 100%, 59%);
   margin-left: 10px;
   margin-right: 10px;
+}
+
+p {
+  color: hsl(302, 100%, 30%);
 }
 
 table {
@@ -24,12 +28,12 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #adffd1;
+  background-color: #ffe5f6;
   font-family: "Times New Roman", Times, serif;
 }
 
 h3 {
-  background-color: #f3f5d6;
+  background-color: #e5f3ff;
   border: 1px solid #000000;
   color: hsl(0, 0%, 0%);
   font-size: 15pt;
@@ -37,6 +41,6 @@ h3 {
   margin-right: 30px;
 }
 
-#extra {
-  
+label {
+  background-color: hsl(180, 20%, 97%)
 }
